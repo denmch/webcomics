@@ -1,4 +1,10 @@
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("css");
-    eleventyConfig.addPassthroughCopy("pages");
+
+    return {
+        dir: {
+            input: '_src',
+            output: '_site'
+        }
+    };
 };
