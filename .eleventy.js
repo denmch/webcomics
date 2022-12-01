@@ -1,5 +1,7 @@
 module.exports = function(eleventyConfig) {
-    eleventyConfig.addPassthroughCopy("css");
+    eleventyConfig.addPassthroughCopy("_src/css");
+    eleventyConfig.addPassthroughCopy("_src/img");
+    eleventyConfig.addPassthroughCopy("**/comics");
 
     return {
         dir: {
